@@ -7,7 +7,7 @@ const showMoreBtn = document.getElementById("show-more-btn");
 let page = 1;
 
 async function searchImages() {
-  const keyword = searchBox.value.trim(); // always read fresh from input
+  const keyword = searchBox.value.trim(); 
   if (!keyword) return;
 
   const url = `https://api.unsplash.com/search/photos?page=${page}&query=${encodeURIComponent(
@@ -51,3 +51,4 @@ showMoreBtn.addEventListener("click", () => {
   page++;
   searchImages();
 });
+
