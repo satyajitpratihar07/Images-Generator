@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Search</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="image-gallery.png" />
 </head>
+
 <body>
+
+    
     <div class="floating-bg">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
     </div>
 
-    <h1>Image Search Engine</h1>
+  
+    <div class="container">
 
-    <form id="search-form" autocomplete="off">
-        <input 
-            type="text" 
-            id="search-box" 
-            placeholder="Search for images" 
-            autocomplete="off" 
-            autocapitalize="off" 
-            autocorrect="off" 
-            spellcheck="false"
-        >
-        <button type="submit">Search</button>
-    </form>
+       
+        <div class="logo-box">
+            <img src="image-gallery.png" alt="Website logo" class="logo" />
+        </div>
 
-    <div id="search-result"></div>
-    
-    <button id="show-more-btn">
-        <span class="btn-text">Show More</span>
-    </button>
+           <h1>Welcome to "ORBI" Platform</h1>
+    <div class="floating-bg">
+   
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+       
+        <form id="search-form" autocomplete="off" class="form-responsive">
+            <input 
+                type="text"
+                id="search-box"
+                placeholder="Search for images…"
+                autocapitalize="off"
+                autocorrect="off"
+                spellcheck="false"
+            />
+            <button type="submit">Search</button>
+        </form>
+       
+    <div class="bubble-bg">
+        <span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span>
+    </div>
+   
+        <div id="search-result" class="grid-responsive"></div>
+
+        
+        <button id="show-more-btn" class="show-more-btn">
+            <span class="btn-text">Show More</span>
+        </button>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
